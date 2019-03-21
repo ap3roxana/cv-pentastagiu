@@ -1,0 +1,32 @@
+header{
+    margin-left:300px;
+}
+div.aboutme-container
+{
+    border:7px dashed black;
+    width:800px;
+    height:200px;
+    margin:20px;
+}
+div.work-container
+{
+    border:7px dashed black;
+    width:800px;
+    height:200px;
+    margin:20px;
+}
+
+div.skills-container
+{
+    border:7px dashed black;
+    width:800px;
+    height:200px;
+    margin:20px;
+
+}
+
+body
+{
+    font-size: 20px;
+    
+}
