@@ -1,32 +1,127 @@
 header{
-    margin-left:300px;
-}
-div.aboutme-container
-{
-    border:7px dashed black;
-    width:800px;
-    height:200px;
-    margin:20px;
-}
-div.work-container
-{
-    border:7px dashed black;
-    width:800px;
-    height:200px;
-    margin:20px;
+    margin-left:45%;
 }
 
-div.skills-container
+
+
+.round1 div{
+    padding-left:20px;
+}
+
+.round1
 {
-    border:7px dashed black;
-    width:800px;
-    height:200px;
-    margin:20px;
+    margin:50px 180px;
+    display: block;
+    width: 80%;
+    height:300px;
+    border: 5px dashed black;
+}
+
+
+.box-title1
+{
+    margin-top:-45px;
+    margin-left:50px;
+    width:9%;
+    background: white;
 
 }
+
+.round2
+{
+    margin:20px 180px;
+    display: block;
+    width: 80%;
+    height:550px;
+    border: 5px dashed black;
+}
+
+.box-title
+{
+    margin-top:-45px;
+    margin-left:50px;
+    width:17%;
+    background: white;
+
+}
+
+.item
+{
+    /*position:relative;*/
+    overflow:none;
+    padding:0px;
+    float:left;
+    width:100%;
+    height:100%;
+    
+
+
+
+}
+
+.worktitle{
+    display:inline-block;
+    margin:5px;
+    padding-left:15px;
+    float: left;
+    width:48%;
+    height:40%;
+    
+
+
+}
+
+
 
 body
 {
     font-size: 20px;
+    
+}
+
+
+.round3
+{
+    padding:0px;
+    margin:50px -6px;
+    display: block;
+    width: 100%;
+    height:200px;
+    border: 5px dashed black;
+}
+
+.box-title3
+{
+    padding-left:10px;
+    margin-top:-45px;
+    margin-left:50px;
+    width:7%;
+    float:(100%-20px);
+    background: white;
+
+}
+.parts
+{
+   
+    display:inline;
+    height:40px;
+    border:2px solid black;
+}
+.pic
+{
+    padding:0px 0px;
+    width: 50px;
+    height: 30px;
+}
+
+.both
+{
+    
+    margin:10px 90px; 
+    display:inline-block;
+    float:left;
+    padding:0;
+    width:140x;
+    height:55px;
     
 }
