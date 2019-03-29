@@ -1,127 +1,292 @@
+*{
+    background-color:#1A1423;
+    font-style: oblique;
+    color:white;
+     box-sizing:border-box;
+    
+}
+body{
+    font-size: 20px;
+
+}
+
+hr { 
+    width:80%;
+    margin-left: 180px;
+    margin-right: 180px;
+    border-style:solid;
+    border-width: 3px;
+  }
+
+
 header{
     margin-left:45%;
 }
+h3{
+    padding-left:25px;
+}
+h2{
+    color:rgb(207, 164, 141);
+}
+
+article{
+    padding:30px;
+}
 
 
-
-.round1 div{
+.aboutme div{
     padding-left:20px;
 }
 
-.round1
+  .workexperience:hover, .workexperience:active 
+  {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px  solid rgb(79, 14, 201);
+}
+
+.aboutme
 {
     margin:50px 180px;
-    display: block;
     width: 80%;
-    height:300px;
-    border: 5px dashed black;
+    border: 5px dashed rgb(255, 255, 255);
 }
+
+.aboutme:hover{ 
+    animation: shake 75ms infinite;
+    animation-timing-function: linear;   
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(0.5deg); }
+    50% { transform: rotate(-0.5deg); }
+    100% { transform: rotate(0.5deg); }
+  }
 
 
 .box-title1
 {
     margin-top:-45px;
     margin-left:50px;
-    width:9%;
-    background: white;
+    width:10%;
+    color:#60566A;
+    /*background: white;*/
 
 }
 
-.round2
+.workexperience
 {
-    margin:20px 180px;
-    display: block;
+    margin:50px 180px;
     width: 80%;
-    height:550px;
-    border: 5px dashed black;
+    border: 5px dashed rgb(255, 255, 255);
+    position: relative;
 }
 
-.box-title
+.box-title2
 {
     margin-top:-45px;
     margin-left:50px;
-    width:17%;
+    width:15%;
     background: white;
 
 }
 
-.item
-{
-    /*position:relative;*/
-    overflow:none;
-    padding:0px;
-    float:left;
-    width:100%;
-    height:100%;
+
+
+  .workexperience .item {
+    display: flex;
+    justify-content: space-around;
+    padding:30px;
+    
+  }
+
+  .workexperience .item .jobtitle {
+    width: 40%;
     
 
+  }
 
+  .workexperience .item .details{
+    width: 60%;
+  }
+    
+  .box-title3
+  {
+      margin-top:-45px;
+      margin-left:50px;
+      width:6%;
+      background: white;
+  
+  }
+
+ .sskils{
+
+    margin:50px 180px;
+     width: 80%;
+     border: 5px dashed rgb(255, 255, 255);
 
 }
 
-.worktitle{
-    display:inline-block;
-    margin:5px;
-    padding-left:15px;
-    float: left;
-    width:48%;
-    height:40%;
+.sskils:hover{
     
 
+  transform: scale(1.1);
+ transition: all ease 500ms;
 
 }
 
+ul{
+  list-style:none;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  align-items:center;
+  height:130px;
+  
+}
+ 
+li{
+ 
+  
+} 
 
-
-body
-{
-    font-size: 20px;
-    
+.box {
+  display: flex;
+  align-items:center;
 }
 
-
-.round3
-{
-    padding:0px;
-    margin:50px -6px;
-    display: block;
-    width: 100%;
-    height:200px;
-    border: 5px dashed black;
-}
-
-.box-title3
-{
-    padding-left:10px;
-    margin-top:-45px;
-    margin-left:50px;
-    width:7%;
-    float:(100%-20px);
-    background: white;
+.borderskill{
+  display:inline-block;
+  border:3px solid white;
 
 }
-.parts
-{
-   
-    display:inline;
-    height:40px;
-    border:2px solid black;
-}
+
 .pic
 {
-    padding:0px 0px;
+    
     width: 50px;
     height: 30px;
+   
 }
 
-.both
-{
-    
-    margin:10px 90px; 
-    display:inline-block;
-    float:left;
-    padding:0;
-    width:140x;
-    height:55px;
-    
+
+  #three:hover{
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 0.5;
+  }
+
+
+  #four:hover{
+    animation: alertPulse 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    background: rgb(223, 58, 58); /* you need this to specify a color to pulse to */
 }
+
+#seven:hover {
+    text-shadow: 0px 0px 0 rgb(208,138,28),1px 1px 0 rgb(165,123,26),2px 2px 0 rgb(242,185,100),3px 3px 0 rgb(227,167,187),4px 4px 0 rgb(182,129,63),5px 5px 0 rgb(161,117,50),6px 6px 0 rgb(144,103,39),7px 7px 0 rgb(130,91,31),8px 8px 0 
+  rgb(120,83,25),9px 9px 0 rgb(108,73,20),10px 10px 0 rgb(93,63,13),11px 11px 0 rgb(60,54,12),12px 12px 0
+  rgb(63,41,8),13px 13px 0
+  }
+
+  #six:hover{
+    -ms-transform: scaleY(1.5); /* IE 9 */
+    -webkit-transform: scaleY(1.5); /* Safari 3-8 */
+    transform: scaleY(1.5);
+
+  }
+
+
+  #one:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+
+  #two:hover
+  {
+      background:white;
+
+  }
+
+  #two{
+    -webkit-transition:all 0.5s ease-out;
+    -moz-transition:all 0.5s ease-out;
+    -ms-transition:all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+  }
+  
+  #two:hover {
+    -webkit-transform:scale(.7);
+    -moz-transform:scale(.7);
+    -ms-transform:scale(.7);
+    -o-transform:scale(.7);
+    transform:scale(.7);
+  }
+
+  #three {
+    -webkit-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+  }
+  
+  #three:hover{
+    -webkit-transform:translate(0px,10px);
+    -moz-transform:translate(0px,10px);
+    -ms-transform:translate(0px,10px);
+    -o-transform:translate(0px,10px);
+    transform:translate(0px,10px);
+  }
+
+
+  #four {
+    -webkit-transition:all 0.5s ease-out;
+    -moz-transition:all 0.5s ease-out;
+    -ms-transition:all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+  }
+  
+  #four:hover {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+
+  #five {
+    -webkit-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+  }
+  
+  #five:hover {
+    -webkit-transform:translate(0px,-10px);
+    -moz-transform:translate(0px,-10px);
+    -ms-transform:translate(0px,-10px);
+    -o-transform:translate(0px,-10px);
+    transform:translate(0px,-10px);
+  }
+
+  .box .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align:end;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .box:hover .tooltiptext {
+    visibility: visible;
+  }
+
