@@ -11,11 +11,14 @@ body{
 }
 
 hr { 
-    width:80%;
-    margin-left: 180px;
-    margin-right: 180px;
+    width:70%;
+    margin:auto;
     border-style:solid;
     border-width: 3px;
+  }
+  hr:hover{
+    width:100%;
+
   }
 
 
@@ -33,22 +36,44 @@ article{
     padding:30px;
 }
 
-
-.aboutme div{
-    padding-left:20px;
+.titlebox::before {
+  content: attr(name);
+  float: left;
+  padding:0px 5px;
+  margin: -20px 60px;
+  background: #1a1423;
+  font-size: 30px;
+  border-radius:5px;
 }
 
-  .workexperience:hover, .workexperience:active 
-  {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 5px  solid rgb(79, 14, 201);
+.aboutme:hover .titlebox {
+  position: relative;
+  -webkit-animation: moving 3s ;
+  animation: moving 3s ;
+  -webkit-animation-fill-mode: forwards; 
+  
+}
+  
+@-webkit-keyframes moving {
+  from {left: 0px;}
+  to {left: 70%;}
+}
+
+@keyframes moving {
+  from {left: 0px;}
+  to {left: 70%;}
 }
 
 .aboutme
 {
-    margin:50px 180px;
-    width: 80%;
-    border: 5px dashed rgb(255, 255, 255);
+  width: 70%;
+  border: 5px dashed rgb(255, 255, 255);
+  margin: auto;
+  margin-bottom:50px;
 }
+
+
+
 
 .aboutme:hover{ 
     animation: shake 75ms infinite;
@@ -62,34 +87,13 @@ article{
   }
 
 
-.box-title1
+  .workexperience
 {
-    margin-top:-45px;
-    margin-left:50px;
-    width:10%;
-    color:#60566A;
-    /*background: white;*/
-
+  width: 70%;
+  border: 5px dashed rgb(255, 255, 255);
+  margin: auto;
+  margin-bottom:50px;
 }
-
-.workexperience
-{
-    margin:50px 180px;
-    width: 80%;
-    border: 5px dashed rgb(255, 255, 255);
-    position: relative;
-}
-
-.box-title2
-{
-    margin-top:-45px;
-    margin-left:50px;
-    width:15%;
-    background: white;
-
-}
-
-
 
   .workexperience .item {
     display: flex;
@@ -97,34 +101,49 @@ article{
     padding:30px;
     
   }
+  .workexperience .item .jobtitle {   width: 40%;}
 
-  .workexperience .item .jobtitle {
-    width: 40%;
+  .workexperience .item .details{  width: 60%; }
     
-
-  }
-
-  .workexperience .item .details{
-    width: 60%;
-  }
-    
-  .box-title3
-  {
-      margin-top:-45px;
-      margin-left:50px;
-      width:6%;
-      background: white;
-  
-  }
-
- .sskils{
-
-    margin:50px 180px;
-     width: 80%;
-     border: 5px dashed rgb(255, 255, 255);
-
+  .workexperience:hover, .workexperience:active 
+  {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px  solid rgb(79, 14, 201);
 }
 
+
+.workexperience:hover .titlebox {
+  transition: all ease-in-out 1s;
+  background: red;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+  
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left:70%; background: blue;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+/* Standard syntax */
+@keyframes mymove {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 70%; background: blue;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+
+.sskils
+{
+  width: 70%;
+  border: 5px dashed rgb(255, 255, 255);
+  margin: auto;
+  margin-bottom:50px;
+}
 .sskils:hover{
     
 
@@ -143,14 +162,21 @@ ul{
   
 }
  
-li{
- 
+li span.tooltiptext{
+  display:none;
+
+  
+} 
+li:hover span.tooltiptext{
+  visibility: visible;
+
   
 } 
 
 .box {
   display: flex;
-  align-items:center;
+  align-items:center; 
+  cursor: pointer;
 }
 
 .borderskill{
@@ -161,10 +187,8 @@ li{
 
 .pic
 {
-    
     width: 50px;
     height: 30px;
-   
 }
 
 
@@ -179,7 +203,7 @@ li{
     animation: alertPulse 2s ease-out;
     animation-iteration-count: infinite;
     opacity: 1;
-    background: rgb(223, 58, 58); /* you need this to specify a color to pulse to */
+    background: rgb(223, 58, 58); 
 }
 
 #seven:hover {
@@ -189,15 +213,15 @@ li{
   }
 
   #six:hover{
-    -ms-transform: scaleY(1.5); /* IE 9 */
-    -webkit-transform: scaleY(1.5); /* Safari 3-8 */
+    -ms-transform: scaleY(1.5); 
+    -webkit-transform: scaleY(1.5); 
     transform: scaleY(1.5);
 
   }
 
 
   #one:hover{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
   }
 
@@ -272,7 +296,10 @@ li{
     transform:translate(0px,-10px);
   }
 
-  .box .tooltiptext {
+
+
+
+  .box .ttext{
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -282,11 +309,89 @@ li{
     padding: 5px 0;
   
     /* Position the tooltip */
-    position: absolute;
+    position:relative;
     z-index: 1;
   }
   
-  .box:hover .tooltiptext {
+  .box:hover .ttext{
     visibility: visible;
   }
 
+
+
+  @media only screen and (max-width: 800px) {
+
+
+    header{
+      margin-left:5%;
+    }
+
+    .aboutme
+{
+  width: 100%;
+  border: 5px dashed  rgb(189, 95, 95);
+  margin: auto;
+  margin-bottom:50px;
+      
+}
+.aboutme:hover .titlebox {
+  position: relative;
+  -webkit-animation: moving 3s ;
+  animation: moving 3s ;
+  -webkit-animation-fill-mode: forwards; 
+  
+}
+  
+@-webkit-keyframes moving {
+  from {left: 0px;}
+  to {left: 50%;}
+}
+
+@keyframes moving {
+  from {left: 0px;}
+  to {left: 50%;}
+}
+
+
+.workexperience
+{
+  
+    width: 100%;
+    border: 5px dashed rgb(255, 255, 255);
+    margin: auto;
+    margin-bottom:50px;
+}
+
+  .workexperience .item {
+    display: flex;
+    justify-content: space-around;
+    padding:30px;
+    
+  }
+  .workexperience .item .jobtitle {   width: 40%;}
+
+  .workexperience .item .details{  width: 60%; }
+    
+  .workexperience:hover, .workexperience:active 
+  {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px  solid rgb(79, 14, 201);
+}
+
+  .sskils{
+
+    width: 100%;
+    border: 5px dashed rgb(236, 104, 104);
+    margin: auto;
+    margin-bottom:50px;
+
+}
+
+hr { 
+  width:100%;
+  margin:auto;
+  border-style:double;
+  border-width: 3px;
+}
+
+
+}
